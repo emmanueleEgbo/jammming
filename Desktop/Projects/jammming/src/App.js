@@ -6,6 +6,7 @@ function App() {
     <div>
       <h1>Jammming</h1>
       <h2>Lets start building our app</h2>
+      <h3>and make magic</h3>
     </div>
   );
 }
