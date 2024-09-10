@@ -1,0 +1,33 @@
+.searchBarStyle {
+  width: 20%;
+  height: 2rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  border-radius: 10px;
+}
+
+.searchBtn {
+  display: block;
+  margin: 14px auto;
+  cursor: pointer;
+  width: 6%;
+  border-radius: 5px;
+  padding: 9px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(21,21,21,0.3);
+  box-shadow: 0 1px 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.searchBtn:hover {
+  background: royalblue;
+  width: 7%;
+  background-color: transparent;
+  box-shadow: none;
+}
