@@ -1,0 +1,29 @@
+
+.addBtn {
+  display: block;
+  margin-top: -1rem;
+  margin-left: 95%;
+  z-index: 10;
+}
+
+.trackStyling {
+  display: block;
+  padding: -0.5rem;
+  font-size: 1rem;
+}
+
+.trackName {
+  margin: 0; 
+}
+
+.audio{
+  margin-left: -1rem;
+  margin-top: 1rem;
+  height: 0.8rem;
+  cursor: pointer;
+}
+
+.artist {
+  height: 0.8rem;
+  margin-top: -0.2rem;
+}

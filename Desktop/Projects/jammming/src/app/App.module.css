@@ -1,14 +1,18 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
 .appBG {
   background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230901/pngtree-an-audio-headphone-and-headphones-on-top-of-a-recorder-image_13166185.jpg');
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  margin-top: -28px;
-  margin-left: -8px;  
-  overflow-y: hidden;
+  margin: 0rem;
+  overflow: hidden;
 } 
 
 .layer {
@@ -25,9 +29,27 @@
   text-align: center;
   font-size: 3rem;
   padding: 9px;
-  margin-top: 0.1rem;
+  margin-top: 0rem;
+  margin-bottom: 2.5rem;
 }
 
 .highlight {
   color: rgba(255, 53, 3, 0.9);
+}
+
+.authorizeBtn {
+  position: absolute;
+  margin: -5.5rem 1%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 0.3);
+  box-shadow: 0 0px 1px white;
+  color: white;
+  cursor: pointer;
+}
+
+.authorizeBtn:hover {
+  font-size: 1.05rem;
 }

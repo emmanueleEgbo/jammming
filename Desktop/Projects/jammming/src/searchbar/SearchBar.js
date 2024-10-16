@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import styles from './SearchBar.module.css';
+//import { search } from '../spotify/Spotify';
 
-function SearchBar(){
+function SearchBar(props){
+   const [term, setTerm] = useState('');
+
+   const handleTermChange = useCallback((event) => {
+    setTerm(event.target.value);
+  }, []);
+
+   const search = useCallback(() => {
+    props.onSearch(term);
+  }, [props.onSearch, term]);
+
    return(
       <div>
          <label htmlFor='search'></label>
@@ -10,8 +21,12 @@ function SearchBar(){
            id='search' 
            placeholder="Search for a Song"
            className={styles.searchBarStyle}
+           onChange={handleTermChange}
+           value={term}
          />
-         <button className={styles.searchBtn}>Search</button>
+         <button className={styles.searchBtn} onClick={search}>
+           SEARCH
+         </button>
       </div>
    );
 }
