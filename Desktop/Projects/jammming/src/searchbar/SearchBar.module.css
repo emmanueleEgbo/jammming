@@ -17,7 +17,7 @@
   display: block;
   margin: -2.5rem 59.5%;
   cursor: pointer;
-  width: 5%;
+  width: 5rem;
   height: 2.3rem;
   padding: 10px;
   font-size: 0.8rem;
@@ -33,4 +33,34 @@
   width: 6%;
   background-color: transparent;
   box-shadow: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .searchBtn {
+    width: 5rem;
+    height: 2.3rem;
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .searchBtn {
+    width: 5rem;
+    height: 2.3rem;
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .searchBarStyle {
+    position: absolute;
+    width: 20%;
+    height: 2rem;
+    display: block;
+    margin: -2.6rem 24%;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
 }

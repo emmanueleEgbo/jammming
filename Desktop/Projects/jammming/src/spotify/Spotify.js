@@ -81,8 +81,6 @@ export const getAccessToken = async(code) => {
 
     const data = await response.json();
     const accessToken = data.access_token; //extracts access token
-    console.log(data)
-    console.log('Access Token:', data.access_token);
     localStorage.setItem('accessToken', accessToken); // Storing accessToken for later use
     return accessToken;
 }
@@ -104,7 +102,6 @@ extractAccessToken();
 
 export const search = (term) => {
     const accessToken = localStorage.getItem('accessToken');
-    console.log(accessToken)
     return fetch((`https://api.spotify.com/v1/search?type=track&q=${term}`), {
       headers: {
         Authorization: `Bearer ${accessToken}`

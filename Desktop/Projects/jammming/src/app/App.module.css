@@ -53,3 +53,18 @@
 .authorizeBtn:hover {
   font-size: 1.05rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.8rem;
+    text-align: right;
+  }
+
+  .authorizeBtn {
+    position: absolute;
+    margin: -5.5rem 1%;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.3rem;
+  }
+}

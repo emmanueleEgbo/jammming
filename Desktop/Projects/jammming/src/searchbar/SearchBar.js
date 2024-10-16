@@ -19,7 +19,7 @@ function SearchBar(props){
          <input 
            type="text" 
            id='search' 
-           placeholder="Search for a Song"
+           placeholder="SEARCH SONGS"
            className={styles.searchBarStyle}
            onChange={handleTermChange}
            value={term}
