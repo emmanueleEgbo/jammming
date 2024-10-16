@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import styles from './SearchBar.module.css';
-//import { search } from '../spotify/Spotify';
 
 function SearchBar(props){
    const [term, setTerm] = useState('');

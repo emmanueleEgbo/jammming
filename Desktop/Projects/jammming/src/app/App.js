@@ -13,10 +13,6 @@ function App(){
   const [searchResults, setSearchResults] = useState([]);
   const [playListName, setPlayListName] = useState('Choose playlist name');
   const [playListTracks, setPlayListTracks] = useState([]);
-  
-// const search = (term) => {
-//   search(term).then(setSearchResults)
-// }
 
 const fetchResults = (term) => {
   search(term) // Assume fetchResults is a function that performs the actual search
